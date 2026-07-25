@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FF5722' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='4 17 10 11 4 5'/><line x1='12' y1='19' x2='20' y2='19'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CRUDMan - Free Fake REST API for Frontend Developers and UI Prototyping" />
+    <title>CRUDMan - Free Fake REST API for Developers</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;600;800;900&display=swap');
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        background-color: #060911;
+        color: #F3F4F6;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        overflow: hidden;
+      }
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Fullscreen Cyber Stage */
+      .stage-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(circle at 50% 50%, #0D1527 0%, #04060C 100%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999;
+        overflow: hidden;
+      }
+
+      /* Background Grid Pattern */
+      .bg-grid {
+        position: absolute;
+        inset: 0;
+        background-image: 
+          linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.8;
+      }
+
+      /* Floating Method Badges Stream */
+      .floating-method {
+        position: absolute;
+        font-family: 'Fira Code', monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 6px;
+        letter-spacing: 0.5px;
+        animation: floatUp 5s infinite linear;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* Multi-colored Floating Badges Array */
+      .fm-get { color: #10B981; border: 1px solid rgba(16, 185, 129, 0.4); background: rgba(16, 185, 129, 0.12); }
+      .fm-post { color: #F59E0B; border: 1px solid rgba(245, 158, 11, 0.4); background: rgba(245, 158, 11, 0.12); }
+      .fm-put { color: #6366F1; border: 1px solid rgba(99, 102, 241, 0.4); background: rgba(99, 102, 241, 0.12); }
+      .fm-delete { color: #EF4444; border: 1px solid rgba(239, 68, 68, 0.4); background: rgba(239, 68, 68, 0.12); }
+
+      /* Varied Positions and Speeds for Floating Stream */
+      .pos-1 { left: 8%; animation-duration: 5.2s; animation-delay: 0s; }
+      .pos-2 { left: 18%; animation-duration: 4.5s; animation-delay: 1.2s; }
+      .pos-3 { left: 28%; animation-duration: 6.0s; animation-delay: 0.5s; }
+      .pos-4 { left: 38%; animation-duration: 4.8s; animation-delay: 2.1s; }
+      .pos-5 { left: 52%; animation-duration: 5.5s; animation-delay: 0.8s; }
+      .pos-6 { left: 64%; animation-duration: 4.2s; animation-delay: 1.8s; }
+      .pos-7 { left: 74%; animation-duration: 5.8s; animation-delay: 0.2s; }
+      .pos-8 { left: 84%; animation-duration: 4.9s; animation-delay: 2.6s; }
+      .pos-9 { left: 92%; animation-duration: 5.3s; animation-delay: 1.5s; }
+      .pos-10 { left: 12%; animation-duration: 6.2s; animation-delay: 3.0s; }
+      .pos-11 { left: 46%; animation-duration: 4.7s; animation-delay: 3.4s; }
+      .pos-12 { left: 80%; animation-duration: 5.6s; animation-delay: 3.8s; }
+
+      @keyframes floatUp {
+        0% { top: 105%; transform: scale(0.85); opacity: 0; }
+        15% { opacity: 0.8; }
+        85% { opacity: 0.8; }
+        100% { top: -10%; transform: scale(1.1); opacity: 0; }
+      }
+
+      /* Center Glass Card */
+      .loader-card {
+        position: relative;
+        z-index: 10;
+        width: 440px;
+        padding: 36px 32px;
+        border-radius: 24px;
+        background: rgba(13, 20, 36, 0.88);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 
+          0 0 60px rgba(0, 0, 0, 0.85),
+          0 0 30px rgba(255, 87, 34, 0.2),
+          inset 0 1px 1px rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      /* Animated Hexagon Logo Frame */
+      .hex-wrapper {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 22px;
+      }
+
+      .hex-ring {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px dashed #FF5722;
+        animation: spinRing 8s linear infinite;
+        box-shadow: 0 0 15px rgba(255, 87, 34, 0.4);
+      }
+
+      .logo-core {
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #FF5722 0%, #FF8A65 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 25px rgba(255, 87, 34, 0.8);
+        z-index: 2;
+      }
+
+      .logo-core svg {
+        width: 28px;
+        height: 28px;
+        stroke: #FFFFFF;
+      }
+
+      /* Typography */
+      .brand-name {
+        font-size: 2rem;
+        font-weight: 900;
+        color: #FFFFFF;
+        letter-spacing: -0.5px;
+        margin-bottom: 4px;
+      }
+      .brand-name span {
+        color: #FF5722;
+      }
+
+      .brand-desc {
+        font-size: 0.82rem;
+        color: #9CA3AF;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      /* Fixed Non-Fluctuating Live Terminal Code Stream Box */
+      .terminal-stream {
+        width: 100%;
+        height: 44px;
+        background: #080D1A;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 0 16px;
+        font-family: 'Fira Code', monospace;
+        font-size: 0.8rem;
+        text-align: left;
+        color: #38BDF8;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.5);
+      }
+
+      .terminal-label {
+        color: #FF5722;
+        font-weight: 700;
+        flex-shrink: 0;
+        white-space: nowrap;
+      }
+
+      .typewriter-wrapper {
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+      }
+
+      .typewriter-text {
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid #FF5722;
+        animation: typing 2s steps(28) infinite;
+        color: #A7F3D0;
+        font-weight: 600;
+      }
+
+      /* Glow Meter Progress */
+      .meter-track {
+        width: 100%;
+        height: 6px;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .meter-bar {
+        height: 100%;
+        width: 0%;
+        background: linear-gradient(90deg, #FF5722, #F59E0B, #10B981, #38BDF8);
+        border-radius: 6px;
+        animation: fillProgress 1.8s ease-in-out forwards;
+        box-shadow: 0 0 16px rgba(255, 87, 34, 0.9);
+      }
+
+      @keyframes spinRing {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      @keyframes typing {
+        0% { width: 0; }
+        60% { width: 100%; }
+        100% { width: 0; }
+      }
+
+      @keyframes fillProgress {
+        0% { width: 5%; }
+        50% { width: 65%; }
+        100% { width: 100%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="stage-loader">
+        <div class="bg-grid"></div>
+
+        <!-- Rich Density Floating Method Badges Background Stream -->
+        <div class="floating-method fm-get pos-1">GET /user</div>
+        <div class="floating-method fm-post pos-2">POST /products</div>
+        <div class="floating-method fm-put pos-3">PUT /carts</div>
+        <div class="floating-method fm-delete pos-4">DELETE /post</div>
+        <div class="floating-method fm-get pos-5">GET /countries</div>
+        <div class="floating-method fm-post pos-6">POST /content</div>
+        <div class="floating-method fm-get pos-7">GET /network</div>
+        <div class="floating-method fm-delete pos-8">DELETE /comments</div>
+        <div class="floating-method fm-put pos-9">PUT /user/2b67c0</div>
+        <div class="floating-method fm-get pos-10">GET /categories</div>
+        <div class="floating-method fm-post pos-11">POST /e_commerce_users</div>
+        <div class="floating-method fm-delete pos-12">DELETE /products/9b1d</div>
+
+        <!-- Glass Card -->
+        <div class="loader-card">
+          <div class="hex-wrapper">
+            <div class="hex-ring"></div>
+            <div class="logo-core">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+          </div>
+
+          <div class="brand-name">CRUD<span>Man</span></div>
+          <div class="brand-desc">Free Fake REST API for Frontend Developers</div>
+
+          <div class="terminal-stream">
+            <span class="terminal-label">FETCH &gt;</span>
+            <div class="typewriter-wrapper">
+              <div class="typewriter-text">GET /api/crudman 200 OK</div>
+            </div>
+          </div>
+
+          <div class="meter-track">
+            <div class="meter-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

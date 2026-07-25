@@ -1,0 +1,602 @@
+[
+  {
+    "uuid": "ca0f8047-0e10-49d8-8593-1df3840d9cbf",
+    "country": "Latvia",
+    "currency_code": "TTD",
+    "language_code": "pa"
+  },
+  {
+    "uuid": "70f9a719-d307-452e-ad06-6d3e4f477b5b",
+    "country": "Micronesia",
+    "currency_code": "MYR",
+    "language_code": "lb"
+  },
+  {
+    "uuid": "97197c64-1349-4795-8bab-e348a6366ee3",
+    "country": "Nauru",
+    "currency_code": "MZN",
+    "language_code": "id"
+  },
+  {
+    "uuid": "8faf0552-049d-46f8-b17d-d0b047c26576",
+    "country": "Micronesia",
+    "currency_code": "BWP",
+    "language_code": "ckb"
+  },
+  {
+    "uuid": "3d64d6ad-e650-4c43-9eba-1c603f8cc935",
+    "country": "Cook Islands",
+    "currency_code": "HNL",
+    "language_code": "vi"
+  },
+  {
+    "uuid": "1e4d3fdd-05e9-43d6-8c92-da84b4416c08",
+    "country": "Zimbabwe",
+    "currency_code": "AMD",
+    "language_code": "ak"
+  },
+  {
+    "uuid": "9533e545-5edd-4cd2-b6e3-237c08569c8b",
+    "country": "Germany",
+    "currency_code": "KMF",
+    "language_code": "ia"
+  },
+  {
+    "uuid": "b1337f86-f884-44ae-87ed-d431b8aeeadf",
+    "country": "Fiji",
+    "currency_code": "ALL",
+    "language_code": "sk"
+  },
+  {
+    "uuid": "3ed197e9-050b-4256-84b8-35a25d62e39a",
+    "country": "Monaco",
+    "currency_code": "BOB",
+    "language_code": "pa"
+  },
+  {
+    "uuid": "5a3b27a3-7d7e-4b61-b267-81f7574786bd",
+    "country": "Congo",
+    "currency_code": "MOP",
+    "language_code": "tt"
+  },
+  {
+    "uuid": "48f2d4e4-4045-437a-9d7b-415c06890ccd",
+    "country": "Argentina",
+    "currency_code": "KPW",
+    "language_code": "mg"
+  },
+  {
+    "uuid": "967896a2-7852-4921-9eee-106a6cdf0667",
+    "country": "Singapore",
+    "currency_code": "KRW",
+    "language_code": "th"
+  },
+  {
+    "uuid": "93ee18bc-025a-437a-b3f2-ccc76dd2ef56",
+    "country": "Singapore",
+    "currency_code": "AOA",
+    "language_code": "nan"
+  },
+  {
+    "uuid": "2539d4c9-5e42-47b3-bc32-51268db80a50",
+    "country": "Switzerland",
+    "currency_code": "MZN",
+    "language_code": "hi"
+  },
+  {
+    "uuid": "ffcf8f56-b124-4e60-8086-63e375819a3e",
+    "country": "South Georgia and the South Sandwich Islands",
+    "currency_code": "MGA",
+    "language_code": "li"
+  },
+  {
+    "uuid": "08d6cd05-ede4-41d9-bad6-bae7a69a40c3",
+    "country": "Turkey",
+    "currency_code": "GNF",
+    "language_code": "ur"
+  },
+  {
+    "uuid": "df0f139b-5eb7-4f9b-a634-34f270cb060a",
+    "country": "Syrian Arab Republic",
+    "currency_code": "ERN",
+    "language_code": "hsb"
+  },
+  {
+    "uuid": "d118baae-7cef-4dde-a902-c6b80b2593ba",
+    "country": "Congo",
+    "currency_code": "AOA",
+    "language_code": "ckb"
+  },
+  {
+    "uuid": "cc965b39-eb37-479b-8b17-32842805a4a4",
+    "country": "Tajikistan",
+    "currency_code": "CUP",
+    "language_code": "zu"
+  },
+  {
+    "uuid": "07bde1f5-3b57-4cb2-ac72-67c7030f2921",
+    "country": "Poland",
+    "currency_code": "RWF",
+    "language_code": "bo"
+  },
+  {
+    "uuid": "b05e0849-d949-489a-b09f-1f5bc0b6a3d7",
+    "country": "Syrian Arab Republic",
+    "currency_code": "BYR",
+    "language_code": "lo"
+  },
+  {
+    "uuid": "c49fd32e-9fbb-4b9c-bfa6-36fcd82655fc",
+    "country": "Indonesia",
+    "currency_code": "GTQ",
+    "language_code": "eo"
+  },
+  {
+    "uuid": "f6f44f61-f17d-4a0e-94a6-47deefc39299",
+    "country": "Turks and Caicos Islands",
+    "currency_code": "LKR",
+    "language_code": "mt"
+  },
+  {
+    "uuid": "77e92558-e44d-4119-a072-a47253ea6624",
+    "country": "Cyprus",
+    "currency_code": "QAR",
+    "language_code": "hak"
+  },
+  {
+    "uuid": "487eef25-d425-4144-9f79-3495fb853b59",
+    "country": "Algeria",
+    "currency_code": "MDL",
+    "language_code": "ro"
+  },
+  {
+    "uuid": "568262ef-4303-4562-936f-20f01ee9d8a2",
+    "country": "Netherlands Antilles",
+    "currency_code": "ZAR",
+    "language_code": "vi"
+  },
+  {
+    "uuid": "8545aec0-d9d4-4f94-9d7f-66d1ff296853",
+    "country": "Korea",
+    "currency_code": "AED",
+    "language_code": "ti"
+  },
+  {
+    "uuid": "54a4ef13-b8c7-4d91-9555-2757ddc77cc8",
+    "country": "Slovakia (Slovak Republic)",
+    "currency_code": "PGK",
+    "language_code": "ps"
+  },
+  {
+    "uuid": "66ed15bd-50c6-4fa5-aa37-bc44d9ab9992",
+    "country": "Turks and Caicos Islands",
+    "currency_code": "PKR",
+    "language_code": "ff"
+  },
+  {
+    "uuid": "fa2f11c4-d610-4ad8-8481-202a8166f136",
+    "country": "Malawi",
+    "currency_code": "GHS",
+    "language_code": "bem"
+  },
+  {
+    "uuid": "60e19cd3-bac3-40e6-b39f-607603295e35",
+    "country": "Antigua and Barbuda",
+    "currency_code": "SGD",
+    "language_code": "ayc"
+  },
+  {
+    "uuid": "1b554640-2cb7-4ed0-800d-234de3e1bcdc",
+    "country": "Finland",
+    "currency_code": "HUF",
+    "language_code": "ff"
+  },
+  {
+    "uuid": "f7c71675-63d8-47d7-9b11-f39c3d951eba",
+    "country": "Slovenia",
+    "currency_code": "AMD",
+    "language_code": "id"
+  },
+  {
+    "uuid": "85aa7470-402b-444b-928c-6b143af4531b",
+    "country": "Central African Republic",
+    "currency_code": "XDR",
+    "language_code": "nan"
+  },
+  {
+    "uuid": "c9b62aff-d872-48ae-a4d3-aa50a33c2a78",
+    "country": "Israel",
+    "currency_code": "RSD",
+    "language_code": "nan"
+  },
+  {
+    "uuid": "446e6215-2010-49f5-8d6e-b1f2ab9afaec",
+    "country": "Fiji",
+    "currency_code": "STD",
+    "language_code": "dz"
+  },
+  {
+    "uuid": "fa414b49-09e9-413d-9d4f-52bacf7cce3c",
+    "country": "Wallis and Futuna",
+    "currency_code": "PKR",
+    "language_code": "bhb"
+  },
+  {
+    "uuid": "9b8fb93b-2504-481d-a796-e905ce6738fb",
+    "country": "France",
+    "currency_code": "KGS",
+    "language_code": "niu"
+  },
+  {
+    "uuid": "a39c1aba-6acd-4a71-a855-393bc87e7f23",
+    "country": "Maldives",
+    "currency_code": "XCD",
+    "language_code": "lg"
+  },
+  {
+    "uuid": "88e0202c-2cdd-43f5-9798-cb323ba7a417",
+    "country": "Switzerland",
+    "currency_code": "LKR",
+    "language_code": "yue"
+  },
+  {
+    "uuid": "f8d90a32-c52a-428a-acad-0a8b09a72cb8",
+    "country": "Western Sahara",
+    "currency_code": "VND",
+    "language_code": "am"
+  },
+  {
+    "uuid": "89593fe2-72d4-4dc4-a58e-2766a6f311af",
+    "country": "Seychelles",
+    "currency_code": "BWP",
+    "language_code": "bs"
+  },
+  {
+    "uuid": "02e780f8-db7d-4db2-8387-5d58222c822b",
+    "country": "Central African Republic",
+    "currency_code": "SGD",
+    "language_code": "zu"
+  },
+  {
+    "uuid": "735881a1-cfaf-40d9-ad76-58d006bc97bd",
+    "country": "Turkmenistan",
+    "currency_code": "GYD",
+    "language_code": "crh"
+  },
+  {
+    "uuid": "c06aa4ac-08ab-4b4c-a1c6-40cfd9a16df2",
+    "country": "Comoros",
+    "currency_code": "JOD",
+    "language_code": "gez"
+  },
+  {
+    "uuid": "7c157fca-f1ca-4ac6-a5e9-53b54f88115b",
+    "country": "Sri Lanka",
+    "currency_code": "LAK",
+    "language_code": "my"
+  },
+  {
+    "uuid": "f3e677ff-acea-453d-bac4-3da98b1039b1",
+    "country": "Qatar",
+    "currency_code": "SBD",
+    "language_code": "ce"
+  },
+  {
+    "uuid": "0dabe1f4-c340-4ff2-9cad-021552ca5ffe",
+    "country": "Congo",
+    "currency_code": "TJS",
+    "language_code": "bem"
+  },
+  {
+    "uuid": "b3099816-9dd5-4b97-9f78-5cc614a19173",
+    "country": "Zimbabwe",
+    "currency_code": "MNT",
+    "language_code": "pap"
+  },
+  {
+    "uuid": "7420cdb3-58af-4df4-8008-77f974d7a8ab",
+    "country": "Syrian Arab Republic",
+    "currency_code": "PAB",
+    "language_code": "ss"
+  },
+  {
+    "uuid": "65f2afb6-2a79-454d-b16a-347160c46487",
+    "country": "Comoros",
+    "currency_code": "DZD",
+    "language_code": "te"
+  },
+  {
+    "uuid": "3ab3ceef-f864-47b4-9072-7ec1673ec6a6",
+    "country": "Croatia",
+    "currency_code": "BGN",
+    "language_code": "am"
+  },
+  {
+    "uuid": "dcb68a4f-f21b-4d42-b38a-70246a940cae",
+    "country": "Nigeria",
+    "currency_code": "AED",
+    "language_code": "sw"
+  },
+  {
+    "uuid": "79d1048a-a237-4908-934d-422f1f2c9250",
+    "country": "Timor-Leste",
+    "currency_code": "JOD",
+    "language_code": "th"
+  },
+  {
+    "uuid": "85668cb9-df3d-4c0f-bbb0-8e41d35b0a3d",
+    "country": "Bahamas",
+    "currency_code": "PGK",
+    "language_code": "ia"
+  },
+  {
+    "uuid": "6c17aac4-e5de-477c-bb40-83aaf987747d",
+    "country": "United States of America",
+    "currency_code": "VUV",
+    "language_code": "te"
+  },
+  {
+    "uuid": "b6c7ecb9-8eff-44fe-89e7-07b0ea1e1288",
+    "country": "Lebanon",
+    "currency_code": "SEK",
+    "language_code": "ha"
+  },
+  {
+    "uuid": "2f412496-7531-4490-8831-461e4fa68576",
+    "country": "Holy See (Vatican City State)",
+    "currency_code": "AMD",
+    "language_code": "fy"
+  },
+  {
+    "uuid": "60a17e81-64ee-4e13-99c7-ade0787f50c6",
+    "country": "American Samoa",
+    "currency_code": "OMR",
+    "language_code": "ku"
+  },
+  {
+    "uuid": "1964d288-09f8-4b68-838b-30ef9f77b7a4",
+    "country": "Moldova",
+    "currency_code": "NZD",
+    "language_code": "ja"
+  },
+  {
+    "uuid": "1cc10aff-c4cb-4daa-86ed-5f04a74af34f",
+    "country": "Lao People's Democratic Republic",
+    "currency_code": "GNF",
+    "language_code": "mni"
+  },
+  {
+    "uuid": "0761c3ca-0867-4916-a397-63e0f6db9d6f",
+    "country": "Papua New Guinea",
+    "currency_code": "YER",
+    "language_code": "lg"
+  },
+  {
+    "uuid": "22fe0e51-aa4f-4fa9-bc79-74653975ecad",
+    "country": "Lesotho",
+    "currency_code": "AUD",
+    "language_code": "wal"
+  },
+  {
+    "uuid": "fb4ca1a9-f2bf-48c3-9578-5e39be95d680",
+    "country": "Spain",
+    "currency_code": "UYU",
+    "language_code": "sa"
+  },
+  {
+    "uuid": "0d0fa9de-fa5a-48b7-93d4-6e78049a0dec",
+    "country": "Bangladesh",
+    "currency_code": "MOP",
+    "language_code": "apn"
+  },
+  {
+    "uuid": "d4ef0222-d463-4bc0-a08e-c9ef20166f74",
+    "country": "United Arab Emirates",
+    "currency_code": "ZAR",
+    "language_code": "ar"
+  },
+  {
+    "uuid": "0651fc48-ef76-4d61-b02d-fb87319f6262",
+    "country": "Guyana",
+    "currency_code": "PHP",
+    "language_code": "tn"
+  },
+  {
+    "uuid": "e327822a-537e-4ec6-99df-3937eb4eda50",
+    "country": "Poland",
+    "currency_code": "SGD",
+    "language_code": "my"
+  },
+  {
+    "uuid": "3c58652d-a5d6-43f3-8e8f-8adb800e950f",
+    "country": "Finland",
+    "currency_code": "PKR",
+    "language_code": "mn"
+  },
+  {
+    "uuid": "edc81074-4e34-4d5d-8c54-1079639682d9",
+    "country": "Congo",
+    "currency_code": "DZD",
+    "language_code": "ayc"
+  },
+  {
+    "uuid": "def1760b-eef0-4c37-a6e0-d16a1226aa95",
+    "country": "Malaysia",
+    "currency_code": "RON",
+    "language_code": "gd"
+  },
+  {
+    "uuid": "9a2f08b9-c2e0-4b7a-bfce-3447a0ab2729",
+    "country": "Burkina Faso",
+    "currency_code": "BDT",
+    "language_code": "yo"
+  },
+  {
+    "uuid": "13bca594-4fc3-4053-8016-fb48b998143b",
+    "country": "Brazil",
+    "currency_code": "MWK",
+    "language_code": "ve"
+  },
+  {
+    "uuid": "76aa17e0-85de-48fc-a24c-57721f9bc31a",
+    "country": "Rwanda",
+    "currency_code": "TJS",
+    "language_code": "am"
+  },
+  {
+    "uuid": "7973c018-6710-4440-881a-2e36b00835ed",
+    "country": "Norfolk Island",
+    "currency_code": "STD",
+    "language_code": "tcy"
+  },
+  {
+    "uuid": "04eb3e4c-d992-45be-a09c-429f6255053e",
+    "country": "Solomon Islands",
+    "currency_code": "DOP",
+    "language_code": "bs"
+  },
+  {
+    "uuid": "c3f8edd3-c9b9-4bf7-b3b9-6405fcc4a434",
+    "country": "Japan",
+    "currency_code": "MGA",
+    "language_code": "gl"
+  },
+  {
+    "uuid": "6ab9bc08-a0d2-4b8d-a9fe-0ce64047e90c",
+    "country": "Northern Mariana Islands",
+    "currency_code": "BMD",
+    "language_code": "kl"
+  },
+  {
+    "uuid": "b91910ea-a1aa-4b82-b2e0-41102bf31669",
+    "country": "Palau",
+    "currency_code": "SBD",
+    "language_code": "da"
+  },
+  {
+    "uuid": "597cc0d2-dea2-48ac-a024-23dd9efaa214",
+    "country": "Cambodia",
+    "currency_code": "GGP",
+    "language_code": "shs"
+  },
+  {
+    "uuid": "dbc33aef-5827-4abe-99ac-389b82bcf9a3",
+    "country": "American Samoa",
+    "currency_code": "GNF",
+    "language_code": "brx"
+  },
+  {
+    "uuid": "7c45caac-873e-44fb-8116-388353064532",
+    "country": "Canada",
+    "currency_code": "TND",
+    "language_code": "yue"
+  },
+  {
+    "uuid": "4af36123-8ba2-4f91-b7d7-67a0cc96dace",
+    "country": "Saint Helena",
+    "currency_code": "LRD",
+    "language_code": "kk"
+  },
+  {
+    "uuid": "9264475b-b785-4b48-8a20-b37fe5e2a11b",
+    "country": "United States Minor Outlying Islands",
+    "currency_code": "DZD",
+    "language_code": "niu"
+  },
+  {
+    "uuid": "ad267c31-fe04-4d2d-b760-139ca7a5a746",
+    "country": "Jordan",
+    "currency_code": "NIS",
+    "language_code": "bho"
+  },
+  {
+    "uuid": "b3c3e3c4-193e-4f2c-9f9e-54e4b47388b4",
+    "country": "Eritrea",
+    "currency_code": "XDR",
+    "language_code": "tcy"
+  },
+  {
+    "uuid": "7f5cdc2d-c267-4c3f-8acc-e55d2e008812",
+    "country": "Kiribati",
+    "currency_code": "BOB",
+    "language_code": "fa"
+  },
+  {
+    "uuid": "2aee96a3-6628-48d8-b0bf-8d8035914f91",
+    "country": "Liberia",
+    "currency_code": "ZWD",
+    "language_code": "fy"
+  },
+  {
+    "uuid": "93f17e64-01ac-473d-b548-1a4062b7a4f3",
+    "country": "Slovakia (Slovak Republic)",
+    "currency_code": "HRK",
+    "language_code": "az"
+  },
+  {
+    "uuid": "60d23164-861e-47c9-8e3d-da07cedfacd5",
+    "country": "Guinea",
+    "currency_code": "SCR",
+    "language_code": "nn"
+  },
+  {
+    "uuid": "5c6a3b73-a0a1-4184-9a82-050b4404f7e6",
+    "country": "Angola",
+    "currency_code": "ZWD",
+    "language_code": "nso"
+  },
+  {
+    "uuid": "24f54c9c-4d31-435d-942a-c17de21dc74c",
+    "country": "Burkina Faso",
+    "currency_code": "AED",
+    "language_code": "hy"
+  },
+  {
+    "uuid": "4a955dcb-b6cb-4c7f-8c19-bad5b2cdcd51",
+    "country": "Tajikistan",
+    "currency_code": "CVE",
+    "language_code": "nso"
+  },
+  {
+    "uuid": "48aac9ba-baa5-46c3-8983-8e32be7c4fd2",
+    "country": "Togo",
+    "currency_code": "IRR",
+    "language_code": "mag"
+  },
+  {
+    "uuid": "10282915-4159-4455-a0e8-538518a23a9a",
+    "country": "Saint Barthelemy",
+    "currency_code": "SAR",
+    "language_code": "nso"
+  },
+  {
+    "uuid": "49e20e4d-c51c-47e1-ae48-a080eaff8646",
+    "country": "South Georgia and the South Sandwich Islands",
+    "currency_code": "MRO",
+    "language_code": "ia"
+  },
+  {
+    "uuid": "bd3c6d28-db4a-4f0b-8bc4-473bd014a2a6",
+    "country": "Jamaica",
+    "currency_code": "AMD",
+    "language_code": "pap"
+  },
+  {
+    "uuid": "da6e97f8-31c9-4d5b-8fbb-e35d08728245",
+    "country": "Armenia",
+    "currency_code": "ARS",
+    "language_code": "dv"
+  },
+  {
+    "uuid": "3ae198fc-3690-4ab2-811b-635fef2c43df",
+    "country": "Romania",
+    "currency_code": "AED",
+    "language_code": "ber"
+  },
+  {
+    "uuid": "62ae3545-7edc-4bfb-93fe-c31ebfdc7538",
+    "country": "Turkey",
+    "currency_code": "GTQ",
+    "language_code": "se"
+  }
+]
