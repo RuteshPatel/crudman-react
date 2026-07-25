@@ -6,9 +6,11 @@
 
 ## 🚀 Live Demo
 
-> **Base URL:** `{YOUR_DEPLOYED_URL}` *(e.g. `https://crudman.vercel.app` or `http://localhost:5174` locally)*
+**👉 [https://crud-man.vercel.app](https://crud-man.vercel.app)**
 
-All endpoints are served relative to this base URL. Replace `{BASE_URL}` in the examples below with your deployment URL.
+> **Base URL:** `https://crud-man.vercel.app`
+
+All endpoints below are available at this base URL. Running locally? Use `http://localhost:5174` instead.
 
 ---
 
@@ -57,7 +59,7 @@ npm run dev
 
 ## 📂 API Resources & Endpoints
 
-> Replace `{BASE_URL}` with your host (e.g. `http://localhost:5174` locally, or your deployed URL).
+> Replace `https://crud-man.vercel.app` with your host (e.g. `http://localhost:5174` locally, or your deployed URL).
 
 ---
 
@@ -65,34 +67,34 @@ npm run dev
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/user` | Get all users |
-| `GET` | `{BASE_URL}/user/{uuid}` | Get single user by UUID |
-| `POST` | `{BASE_URL}/user` | Create a new user |
-| `PUT` | `{BASE_URL}/user/{uuid}` | Update user by UUID |
-| `DELETE` | `{BASE_URL}/user/{uuid}` | Delete user (mocked) |
+| `GET` | `https://crud-man.vercel.app/user` | Get all users |
+| `GET` | `https://crud-man.vercel.app/user/{uuid}` | Get single user by UUID |
+| `POST` | `https://crud-man.vercel.app/user` | Create a new user |
+| `PUT` | `https://crud-man.vercel.app/user/{uuid}` | Update user by UUID |
+| `DELETE` | `https://crud-man.vercel.app/user/{uuid}` | Delete user (mocked) |
 
 **cURL Examples:**
 ```bash
 # Get all users
-curl -X GET "{BASE_URL}/user" \
+curl -X GET "https://crud-man.vercel.app/user" \
   -H "Accept: application/json"
 
 # Get single user
-curl -X GET "{BASE_URL}/user/2b67c08a-12b1-44ae-bf6f-f4b66efe800a" \
+curl -X GET "https://crud-man.vercel.app/user/2b67c08a-12b1-44ae-bf6f-f4b66efe800a" \
   -H "Accept: application/json"
 
 # Create a user
-curl -X POST "{BASE_URL}/user" \
+curl -X POST "https://crud-man.vercel.app/user" \
   -H "Content-Type: application/json" \
   -d '{"name":"Alex Morgan","user_name":"alexm","email":"alex@example.com","phone":"+1-555-019-2834"}'
 
 # Update a user
-curl -X PUT "{BASE_URL}/user/2b67c08a-12b1-44ae-bf6f-f4b66efe800a" \
+curl -X PUT "https://crud-man.vercel.app/user/2b67c08a-12b1-44ae-bf6f-f4b66efe800a" \
   -H "Content-Type: application/json" \
   -d '{"name":"Alex Morgan Updated","email":"alex.updated@example.com"}'
 
 # Delete a user (mocked)
-curl -X DELETE "{BASE_URL}/user/2b67c08a-12b1-44ae-bf6f-f4b66efe800a"
+curl -X DELETE "https://crud-man.vercel.app/user/2b67c08a-12b1-44ae-bf6f-f4b66efe800a"
 ```
 
 ---
@@ -101,19 +103,19 @@ curl -X DELETE "{BASE_URL}/user/2b67c08a-12b1-44ae-bf6f-f4b66efe800a"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/countries` | Get all countries |
-| `GET` | `{BASE_URL}/countries/{uuid}` | Get country by UUID |
-| `POST` | `{BASE_URL}/countries` | Add a new country |
-| `PUT` | `{BASE_URL}/countries/{uuid}` | Update country details |
-| `DELETE` | `{BASE_URL}/countries/{uuid}` | Delete country (mocked) |
+| `GET` | `https://crud-man.vercel.app/countries` | Get all countries |
+| `GET` | `https://crud-man.vercel.app/countries/{uuid}` | Get country by UUID |
+| `POST` | `https://crud-man.vercel.app/countries` | Add a new country |
+| `PUT` | `https://crud-man.vercel.app/countries/{uuid}` | Update country details |
+| `DELETE` | `https://crud-man.vercel.app/countries/{uuid}` | Delete country (mocked) |
 
 **cURL Examples:**
 ```bash
 # Get all countries
-curl -X GET "{BASE_URL}/countries"
+curl -X GET "https://crud-man.vercel.app/countries"
 
 # Create a country
-curl -X POST "{BASE_URL}/countries" \
+curl -X POST "https://crud-man.vercel.app/countries" \
   -H "Content-Type: application/json" \
   -d '{"country":"India","currency_code":"INR","language_code":"hi"}'
 ```
@@ -124,14 +126,14 @@ curl -X POST "{BASE_URL}/countries" \
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/content` | Get all content blocks |
-| `GET` | `{BASE_URL}/content/{uuid}` | Get single content block |
-| `POST` | `{BASE_URL}/content` | Create content block |
-| `PUT` | `{BASE_URL}/content/{uuid}` | Update content block |
-| `DELETE` | `{BASE_URL}/content/{uuid}` | Delete content (mocked) |
+| `GET` | `https://crud-man.vercel.app/content` | Get all content blocks |
+| `GET` | `https://crud-man.vercel.app/content/{uuid}` | Get single content block |
+| `POST` | `https://crud-man.vercel.app/content` | Create content block |
+| `PUT` | `https://crud-man.vercel.app/content/{uuid}` | Update content block |
+| `DELETE` | `https://crud-man.vercel.app/content/{uuid}` | Delete content (mocked) |
 
 ```bash
-curl -X GET "{BASE_URL}/content"
+curl -X GET "https://crud-man.vercel.app/content"
 ```
 
 ---
@@ -140,14 +142,14 @@ curl -X GET "{BASE_URL}/content"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/network` | Get network records (domains, IPs) |
-| `GET` | `{BASE_URL}/network/{uuid}` | Get single network record |
-| `POST` | `{BASE_URL}/network` | Store network record |
-| `PUT` | `{BASE_URL}/network/{uuid}` | Update network record |
-| `DELETE` | `{BASE_URL}/network/{uuid}` | Delete network record (mocked) |
+| `GET` | `https://crud-man.vercel.app/network` | Get network records (domains, IPs) |
+| `GET` | `https://crud-man.vercel.app/network/{uuid}` | Get single network record |
+| `POST` | `https://crud-man.vercel.app/network` | Store network record |
+| `PUT` | `https://crud-man.vercel.app/network/{uuid}` | Update network record |
+| `DELETE` | `https://crud-man.vercel.app/network/{uuid}` | Delete network record (mocked) |
 
 ```bash
-curl -X GET "{BASE_URL}/network"
+curl -X GET "https://crud-man.vercel.app/network"
 ```
 
 ---
@@ -156,13 +158,13 @@ curl -X GET "{BASE_URL}/network"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/date-time` | Get all date-time records |
-| `GET` | `{BASE_URL}/date-time/{uuid}` | Get single record |
-| `POST` | `{BASE_URL}/date-time` | Create timestamp entry |
-| `PUT` | `{BASE_URL}/date-time/{uuid}` | Update timestamp values |
+| `GET` | `https://crud-man.vercel.app/date-time` | Get all date-time records |
+| `GET` | `https://crud-man.vercel.app/date-time/{uuid}` | Get single record |
+| `POST` | `https://crud-man.vercel.app/date-time` | Create timestamp entry |
+| `PUT` | `https://crud-man.vercel.app/date-time/{uuid}` | Update timestamp values |
 
 ```bash
-curl -X GET "{BASE_URL}/date-time"
+curl -X GET "https://crud-man.vercel.app/date-time"
 ```
 
 ---
@@ -171,19 +173,19 @@ curl -X GET "{BASE_URL}/date-time"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/products` | Get all products |
-| `GET` | `{BASE_URL}/products/{uuid}` | Get product by UUID |
-| `POST` | `{BASE_URL}/products` | Add product |
-| `PUT` | `{BASE_URL}/products/{uuid}` | Update product |
-| `DELETE` | `{BASE_URL}/products/{uuid}` | Delete product (mocked) |
+| `GET` | `https://crud-man.vercel.app/products` | Get all products |
+| `GET` | `https://crud-man.vercel.app/products/{uuid}` | Get product by UUID |
+| `POST` | `https://crud-man.vercel.app/products` | Add product |
+| `PUT` | `https://crud-man.vercel.app/products/{uuid}` | Update product |
+| `DELETE` | `https://crud-man.vercel.app/products/{uuid}` | Delete product (mocked) |
 
 **cURL Example:**
 ```bash
 # Get all products
-curl -X GET "{BASE_URL}/products"
+curl -X GET "https://crud-man.vercel.app/products"
 
 # Create a product
-curl -X POST "{BASE_URL}/products" \
+curl -X POST "https://crud-man.vercel.app/products" \
   -H "Content-Type: application/json" \
   -d '{
     "title": "Wireless Headphones",
@@ -200,14 +202,14 @@ curl -X POST "{BASE_URL}/products" \
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/carts` | Get all shopping carts |
-| `GET` | `{BASE_URL}/carts/{uuid}` | Get cart by UUID |
-| `POST` | `{BASE_URL}/carts` | Create cart |
-| `PUT` | `{BASE_URL}/carts/{uuid}` | Update cart |
-| `DELETE` | `{BASE_URL}/carts/{uuid}` | Delete cart (mocked) |
+| `GET` | `https://crud-man.vercel.app/carts` | Get all shopping carts |
+| `GET` | `https://crud-man.vercel.app/carts/{uuid}` | Get cart by UUID |
+| `POST` | `https://crud-man.vercel.app/carts` | Create cart |
+| `PUT` | `https://crud-man.vercel.app/carts/{uuid}` | Update cart |
+| `DELETE` | `https://crud-man.vercel.app/carts/{uuid}` | Delete cart (mocked) |
 
 ```bash
-curl -X GET "{BASE_URL}/carts"
+curl -X GET "https://crud-man.vercel.app/carts"
 ```
 
 ---
@@ -216,10 +218,10 @@ curl -X GET "{BASE_URL}/carts"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/categories` | Get all product categories |
+| `GET` | `https://crud-man.vercel.app/categories` | Get all product categories |
 
 ```bash
-curl -X GET "{BASE_URL}/categories"
+curl -X GET "https://crud-man.vercel.app/categories"
 ```
 
 ---
@@ -228,10 +230,10 @@ curl -X GET "{BASE_URL}/categories"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/e_commerce_users` | Get all e-commerce users |
+| `GET` | `https://crud-man.vercel.app/e_commerce_users` | Get all e-commerce users |
 
 ```bash
-curl -X GET "{BASE_URL}/e_commerce_users"
+curl -X GET "https://crud-man.vercel.app/e_commerce_users"
 ```
 
 ---
@@ -240,14 +242,14 @@ curl -X GET "{BASE_URL}/e_commerce_users"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/post` | Get all blog posts |
-| `GET` | `{BASE_URL}/post/{uuid}` | Get single post |
-| `POST` | `{BASE_URL}/post` | Publish a new post |
-| `PUT` | `{BASE_URL}/post/{uuid}` | Update post |
-| `DELETE` | `{BASE_URL}/post/{uuid}` | Delete post (mocked) |
+| `GET` | `https://crud-man.vercel.app/post` | Get all blog posts |
+| `GET` | `https://crud-man.vercel.app/post/{uuid}` | Get single post |
+| `POST` | `https://crud-man.vercel.app/post` | Publish a new post |
+| `PUT` | `https://crud-man.vercel.app/post/{uuid}` | Update post |
+| `DELETE` | `https://crud-man.vercel.app/post/{uuid}` | Delete post (mocked) |
 
 ```bash
-curl -X GET "{BASE_URL}/post"
+curl -X GET "https://crud-man.vercel.app/post"
 ```
 
 ---
@@ -256,12 +258,12 @@ curl -X GET "{BASE_URL}/post"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/comments` | Get all comments |
-| `POST` | `{BASE_URL}/comments` | Post a comment |
-| `DELETE` | `{BASE_URL}/comments/{uuid}` | Delete comment (mocked) |
+| `GET` | `https://crud-man.vercel.app/comments` | Get all comments |
+| `POST` | `https://crud-man.vercel.app/comments` | Post a comment |
+| `DELETE` | `https://crud-man.vercel.app/comments/{uuid}` | Delete comment (mocked) |
 
 ```bash
-curl -X GET "{BASE_URL}/comments"
+curl -X GET "https://crud-man.vercel.app/comments"
 ```
 
 ---
@@ -270,10 +272,10 @@ curl -X GET "{BASE_URL}/comments"
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `GET` | `{BASE_URL}/blog_users` | Get blog authors and contributors |
+| `GET` | `https://crud-man.vercel.app/blog_users` | Get blog authors and contributors |
 
 ```bash
-curl -X GET "{BASE_URL}/blog_users"
+curl -X GET "https://crud-man.vercel.app/blog_users"
 ```
 
 ---
@@ -317,7 +319,7 @@ All endpoints return a consistent JSON envelope:
 You can intentionally trigger a `404` error by passing `/123` as a UUID:
 
 ```bash
-curl -X GET "{BASE_URL}/user/123"
+curl -X GET "https://crud-man.vercel.app/user/123"
 # Returns: { "success": false, "message": "Invalid UUID", "status_code": 404 }
 ```
 
@@ -368,7 +370,7 @@ npm run build
 # Deploy the /dist folder to Vercel, Netlify, or any static host
 ```
 
-After deployment, replace `{BASE_URL}` in your project with your live URL (e.g. `https://crudman.vercel.app`).
+After deployment, replace `https://crud-man.vercel.app` in your project with your live URL (e.g. `https://crudman.vercel.app`).
 
 ---
 
